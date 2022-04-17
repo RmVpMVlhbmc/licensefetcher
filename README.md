@@ -18,6 +18,22 @@ license-list | grep $QUERY
 license-get -l $LICENSE -o $PATH_TO_OUTPUT
 ```
 
+### PowerShell
+
+Import script: `Import-Module $PathToScript/license-fetcher.psm1`
+
+#### Find license
+
+```powershell
+Find-License -Query $Query
+```
+
+#### Get license
+
+```powershell
+Get-License -License $License -Destination $Destination -Source github
+```
+
 ## License
 
 GNU General Public License Version 3
